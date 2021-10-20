@@ -230,4 +230,3 @@ function get_paginate_links_as_array( $html, $firstElement = '', $lastElement = 
 
     return $extractedElements;
 }
-
