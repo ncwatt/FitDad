@@ -18,9 +18,26 @@ if ( 'POST' !== $_SERVER['REQUEST_METHOD'] ) {
 }
 
 /** Sets up the WordPress Environment. */
-require __DIR__ . '/wp-load.php';
+require __DIR__ . '/../../../wp-load.php';
 
 nocache_headers();
+
+$receivedRecaptcha = $_POST['g-recaptcha-response'];
+$verifiedRecaptcha = file_get_contents( 'https://www.google.com/recaptcha/api/siteverify?secret=' . RECAPTCHA_SECRETKEY . '&response=' . $receivedRecaptcha);
+
+$verResponseData = json_decode($verifiedRecaptcha);
+
+if( !$verResponseData->success )
+{
+	wp_die(
+		'<p>reCAPTCHA is not valid! : ' . $_POST['recaptchaRes'],
+		__( 'Comment Submission Failure' ),
+		array(
+			'response'  => '',
+			'back_link' => true,
+		)
+	);
+}
 
 $comment = wp_handle_comment_submission( wp_unslash( $_POST ) );
 if ( is_wp_error( $comment ) ) {
