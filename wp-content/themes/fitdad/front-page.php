@@ -303,17 +303,19 @@
 		<div class="row">
 			<div class="mt-4">
 				<div class="advert-before">Advert</div>
-				<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-					<!-- Fit Dad Square -->
-					<ins class="adsbygoogle"
-						style="display:block"
-						data-ad-client="ca-pub-2933900882310913"
-						data-ad-slot="9880151769"
-						data-ad-format="auto"
-						data-full-width-responsive="true"></ins>
-				<script>
-					(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
+				<div align="center">
+					<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- Fit Dad Square -->
+						<ins class="adsbygoogle"
+							style="display:block"
+							data-ad-client="ca-pub-2933900882310913"
+							data-ad-slot="9880151769"
+							data-ad-format="auto"
+							data-full-width-responsive="true"></ins>
+					<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+				</div>
 				<div class="advert-after"></div>
 			</div>
 		</div>
