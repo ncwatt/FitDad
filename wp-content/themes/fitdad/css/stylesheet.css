@@ -363,3 +363,21 @@ footer {
     }
 
 
+/* Training Logs */
+.wt-log {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.wt-log th, .wt-log td {
+    width: 10%;
+    text-align: center;
+}
+
+.wt-log .wt-log-exercise {
+    background: #f0f0f0;
+    column-span: all;
+    font-style: italic;
+    font-weight: bold;
+    text-align: left;
+}
