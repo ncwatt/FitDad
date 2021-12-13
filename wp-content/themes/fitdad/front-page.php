@@ -187,7 +187,7 @@
 				?>
 				<hr />
 			</div>
-		</div>
+		</div> 
 		<div class="row post-list">
 			<?php
 				if ( $featured -> have_posts() ) {
