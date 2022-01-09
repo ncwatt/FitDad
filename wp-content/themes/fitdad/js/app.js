@@ -1,5 +1,12 @@
 window.onscroll = function () { topMenuClasses() };
-window.onload = function () { if (document.getElementById("hpLogo") == null) { topMenuLight() } };
+window.onload = function () { 
+    if (document.getElementById("hpLogo") == null) { 
+        topMenuLight(); 
+    }
+
+    wpfWpColumnsToBsRow();
+    wpfWpColumnToBsColumn();
+};
 
 var topNavigation = document.getElementById("topNavigation");
 var brandLink = document.getElementById("brandLink");
@@ -34,5 +41,22 @@ function topMenuClasses() {
         else {
             topMenuDark();
         }
+    }
+}
+
+function wpfWpColumnsToBsRow() {
+    var elements = document.getElementsByClassName("wpf-wpcols-bsrow");
+
+    for (var counter = 0; counter < elements.length; counter++) {
+        elements[counter].classList.remove("wp-block-columns");
+        elements[counter].classList.add("row");
+    }
+}
+
+function wpfWpColumnToBsColumn() {
+    var elements = document.getElementsByClassName("wpf-wpcol-bscol");
+
+    for (var counter = 0; counter < elements.length; counter++) {
+        elements[counter].classList.remove("wp-block-column");
     }
 }
