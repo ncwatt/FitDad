@@ -58,5 +58,6 @@ function wpfWpColumnToBsColumn() {
 
     for (var counter = 0; counter < elements.length; counter++) {
         elements[counter].classList.remove("wp-block-column");
+        elements[counter].style.removeProperty("flex-basis");
     }
 }
