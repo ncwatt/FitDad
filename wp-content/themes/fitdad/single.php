@@ -2,7 +2,7 @@
 <div class="page-content bg-color1">
 	<div class="container">
 		<div class="row">
-			<div class="col-12 col-md-9 post-single">
+			<div class="col-12 col-lg-9 post-single">
 				<?php
 					// Check if there is a featured image
 					if ( has_post_thumbnail() ) {
@@ -26,7 +26,7 @@
 					}
 				?>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-12 col-lg-3">
 				<div class="row">
 					<div class="col-12">
 						<?php
