@@ -116,7 +116,7 @@
 					</table>
 				</div>
 			</div>
-			<div class="d-none d-md-block d-lg-none col-md-4 hp-block hp-block-pic4">
+			<div class="d-none d-md-block d-lg-none col-md-4 hp-block hp-block-pic5">
 				<div class="hp-block-content">
 				</div>
 			</div>

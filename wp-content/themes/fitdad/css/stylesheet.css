@@ -341,6 +341,11 @@ footer {
         background-size: 100% 100%;
     }
 
+    .hp-blocks .hp-block-pic5 {
+        background: url('../img/hp_block_5.jpg') no-repeat center;
+        background-size: 100% 100%;
+    }
+
     .hp-blocks .hp-block-text1 {
         background: #f6c570;
     }
