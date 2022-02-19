@@ -45,7 +45,7 @@ function topMenuClasses() {
 }
 
 function wpfWpColumnsToBsRow() {
-    var elements = document.getElementsByClassName("wpf-wpcols-bsrow");
+    var elements = document.getElementsByClassName("bs-columns");
 
     for (var counter = 0; counter < elements.length; counter++) {
         elements[counter].classList.remove("wp-block-columns");
@@ -54,7 +54,7 @@ function wpfWpColumnsToBsRow() {
 }
 
 function wpfWpColumnToBsColumn() {
-    var elements = document.getElementsByClassName("wpf-wpcol-bscol");
+    var elements = document.getElementsByClassName("bs-column");
 
     for (var counter = 0; counter < elements.length; counter++) {
         elements[counter].classList.remove("wp-block-column");
