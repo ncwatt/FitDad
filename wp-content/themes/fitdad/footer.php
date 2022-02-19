@@ -15,7 +15,29 @@
 				</div>
 				<div class="col-md-3 mt-3 mt-md-0 text-center text-md-end order-2 order-md-3">
 					<h9>Boring Links</h9>
-					<p><a href="#">Disclaimer</a> | <a href="#">Terms of Use</a></p>
+					<p>
+						<a href="#discModal" data-bs-toggle="modal" data-bs-target="#discModal">Disclaimer</a> | 
+						<a href="#discModal" data-bs-toggle="modal" data-bs-target="#discModal">Terms of Use</a>
+					</p>
+					<!-- Disclaimer / Terms of Use Modal -->
+					<div class="modal fade" id="discModal" tabindex="-1" aria-labelledby="discModalLabel" aria-hidden="true">
+  						<div class="modal-dialog">
+    						<div class="modal-content">
+      							<div class="modal-header">
+        							<h5 class="modal-title" id="discModalLabel">Disclaimer / Terms of Use</h5>
+        							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      							</div>
+      							<div class="modal-body">
+        							I'm still writing my disclaimer / terms of use. But in the meantime it's best to acknowledge that the only qualification that I hold is the
+									Leadership in Running Fitness from England Athletics. So, before you follow any of the information contained within this site
+									you should seek guidance from a fitness professional.
+      							</div>
+      							<div class="modal-footer">
+        							<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      							</div>
+    						</div>
+  						</div>
+					</div>
 				</div>
 			</div>
 		</div>
