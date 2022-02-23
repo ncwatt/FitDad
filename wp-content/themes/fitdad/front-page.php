@@ -332,7 +332,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<?php
-					echo "<img src=\"", bloginfo('template_directory'), "/img/training-records.jpg\" class=\"img-fluid\" alt=\"Training Records\" />";
+					echo "<img src=\"", bloginfo('template_directory'), "/img/training-records.jpg\" class=\"img-fluid mb-2 mb-md-0\" alt=\"Training Records\" />";
 				?>
 			</div>
 			<div class="col-md-6">
@@ -344,7 +344,7 @@
 				</p>
 				<p>
 					The plan moving forward is to then outline my diet each week. I'll be posting my daily average kcals and macros. Plus I will be
-					posting some example of everything I eat in a day. I'm currently use 
+					posting some examples of everything I eat in a day. I'm currently use 
 					<a href="https://joincarbon.com/" target="_blank">Carbon Diet Coach</a> to track all of my nutrition which also
 					calculates how much protein, carbs and fats I should be consuming to reach my specific goal.
 				</p>
