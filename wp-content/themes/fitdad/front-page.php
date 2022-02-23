@@ -138,11 +138,11 @@
 					This is my fitness and lifestyle blog recording my journey from fat lad to fit dad.
 				</h3>
 				<p>
-					This site is meant to be a light hearted log of my progress, what training programmes / techniques I'm partaking in and how I fit it in
-					around the most important thing in my life....my family. If you are easily offended then I would advise you to jog on (no pun intended)
-					as I won't be holding any punches. I will be telling it like it is. To find out more about why I can even be arsed click the button below.
+					This site is still very much in it's infancy. The plan is to not only talk about my own journey (the ups and the downs). But to develop
+					content which I hope will inspire others out there to embark on theirs. I want to show, that despite working full time, it is possible
+					to make positive changes for yourself, so that you can enjoy time with your family for years to come.
 				</p>
-				<a href="#" class="btn btn-info">Tell me more...</a>
+				<a href="https://fitdad.co.uk/about/" class="btn btn-info">Tell me more...</a>
 			</div>
 			<div class="col-md-4 mt-4 mt-md-0">
 				<div class="d-md-none advert-before">Advert</div>
@@ -317,6 +317,37 @@
 					</script>
 				</div>
 				<div class="advert-after"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="bg-color1 py-4">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2>Coming Soon</h2>
+				<hr />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<?php
+					echo "<img src=\"", bloginfo('template_directory'), "/img/training-records.jpg\" class=\"img-fluid\" alt=\"Training Records\" />";
+				?>
+			</div>
+			<div class="col-md-6">
+				<h3>Training Records</h3>
+				<p>
+					I'm in the process of back dating my training records to the beginning of the 2022. When completed I will be posting an update every
+					week of what training I have completed. Each run, walk and rep is getting tracked and will be available for you to see what training
+					I'm doing in my bid to go from fat lad to fit dad.
+				</p>
+				<p>
+					The plan moving forward is to then outline my diet each week. I'll be posting my daily average kcals and macros. Plus I will be
+					posting some example of everything I eat in a day. I'm currently use 
+					<a href="https://joincarbon.com/" target="_blank">Carbon Diet Coach</a> to track all of my nutrition which also
+					calculates how much protein, carbs and fats I should be consuming to reach my specific goal.
+				</p>
 			</div>
 		</div>
 	</div>
