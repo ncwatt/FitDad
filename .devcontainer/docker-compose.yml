@@ -4,6 +4,8 @@ services:
   web:
     build: ./wordpress
     image: gtctek/wordpress:latest
+    container_name: fitdad-web
+    hostname: fitdad-web
     ports:
       - '8080:80'
     volumes:
@@ -14,6 +16,8 @@ services:
       - dev-env
   phpmyadmin:
     image: phpmyadmin:latest
+    container_name: fitdad-phpmyadmin
+    hostname: fitdad-phpmyadmin
     ports:
       - 8081:80
     environment:
@@ -25,6 +29,8 @@ services:
       - dev-env
   mariadb:
     image: mariadb:latest
+    container_name: fitdad-mariadb
+    hostname: fitdad-mariadb
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: 'r00tp4ssw0rd'
@@ -32,12 +38,12 @@ services:
       MYSQL_PASSWORD: 'w0rdpr3ss'
       MYSQL_DATABASE: 'wordpress'
     volumes:
-      - mysqldata-fitdad:/var/lib/mysql
+      - mysqldata:/var/lib/mysql
     ports:
       - 3306:3306
     networks:
       - dev-env
 volumes:
-  mysqldata-fitdad: {}
+  mysqldata: {}
 networks:
   dev-env: {}
