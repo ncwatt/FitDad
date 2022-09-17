@@ -142,7 +142,7 @@
 					content which I hope will inspire others out there to embark on theirs. I want to show, that despite working full time, it is possible
 					to make positive changes for yourself, so that you can enjoy time with your family for years to come.
 				</p>
-				<a href="https://fitdad.co.uk/about/" class="btn btn-info">Tell me more...</a>
+				<a href="<?php echo get_permalink( get_page_by_path( '/about' ) ); ?>" class="btn btn-info">Tell me more...</a>
 			</div>
 			<div class="col-md-4 mt-4 mt-md-0">
 				<div class="d-md-none advert-before">Advert</div>
