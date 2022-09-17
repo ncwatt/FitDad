@@ -50,6 +50,10 @@ function wpfWpColumnsToBsRow() {
     for (var counter = 0; counter < elements.length; counter++) {
         elements[counter].classList.remove("wp-block-columns");
         elements[counter].classList.add("row");
+
+        // Remove classes that start with "wp-container"
+        const classes = elements[counter].className.split(" ").filter(c => !c.startsWith("wp-container"));
+        elements[counter].className = classes.join(" ").trim();
     }
 }
 
@@ -59,5 +63,13 @@ function wpfWpColumnToBsColumn() {
     for (var counter = 0; counter < elements.length; counter++) {
         elements[counter].classList.remove("wp-block-column");
         elements[counter].style.removeProperty("flex-basis");
+
+        // Remove classes that start with "wp-container"
+        const classes = elements[counter].className.split(" ").filter(c => !c.startsWith("wp-container"));
+        elements[counter].className = classes.join(" ").trim();
     }
 }
+
+//const prefix = "wp-container";
+//const classes = el.className.split(" ").filter(c => !c.startsWith(prefix));
+//el.className = classes.join(" ").trim();
