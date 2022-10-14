@@ -10,7 +10,7 @@
 					</ul>
 				</div>
 				<div class="col-md-6 mt-3 mt-md-0 text-center order-3 order-md-2">
-					<p class="copyright">&copy; Copyright 2022. All Rights Reserved by <del>a fat lad</del> fitdad.co.uk</p>
+					<p class="copyright">&copy; Copyright 2022. All Rights Reserved by <a href="/">fitdad.co.uk</a></p>
 					<p class="admin-login">Powered by <a href="https://wordpress.org/" target="_blank">WordPress</a> | Theme by <a href="https://gtctek.co.uk" target="_blank">Gtctek</a> | Admin <a href="/wp-admin">Login</a></p>
 				</div>
 				<div class="col-md-3 mt-3 mt-md-0 text-center text-md-end order-2 order-md-3">
