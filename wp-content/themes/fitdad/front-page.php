@@ -202,11 +202,11 @@
 						// Check if there is a thumbnail image
 						if ( has_post_thumbnail() ) {
 							// Display the thumbnail
-							echo "<a href=\"", get_the_permalink(), "\"><img src=\"", get_the_post_thumbnail_url(), "\" class=\"img-fluid mb-2 mb-md-0\" alt=\"", get_the_title(), "\" /></a>";
+							echo "<a href=\"", get_the_permalink(), "\"><img src=\"", get_the_post_thumbnail_url(), "\" class=\"img-fluid mb-2 mb-md-0\" alt=\"", get_the_title(), "\" loading=\"lazy\" /></a>";
 						}
 						else {
 							// No thumbnail image so lets display the default one from the template
-							echo "<a href=\"", get_the_permalink(), "\"><img src=\"", bloginfo('template_directory'), "/img/default-post-image.jpg\" class=\"img-fluid mb-2 mb-md-0\" alt=\"", get_the_title(), "\" /></a>";
+							echo "<a href=\"", get_the_permalink(), "\"><img src=\"", bloginfo('template_directory'), "/img/default-post-image.jpg\" class=\"img-fluid mb-2 mb-md-0\" alt=\"", get_the_title(), "\" loading=\"lazy\" /></a>";
 						}
 
 						echo "</div><div class=\"col-md-6\"><a href=\"", get_the_permalink(), "\">";
@@ -272,11 +272,11 @@
 							// Check if there is a thumbnail image
 							if ( has_post_thumbnail() ) {
 								// Display the thumbnail
-								echo "<img src=\"", get_the_post_thumbnail_url(), "\" class=\"img-fluid post-stacked\" alt=\"", get_the_title(), "\" />";
+								echo "<img src=\"", get_the_post_thumbnail_url(), "\" class=\"img-fluid post-stacked\" alt=\"", get_the_title(), "\" loading=\"lazy\" />";
 							}
 							else {
 								// No thumbnail image so lets display the default one from the template
-								echo "<img src=\"", bloginfo('template_directory'), "/img/default-post-image.jpg\" class=\"img-fluid post-stacked\" alt=\"", get_the_title(), "\" />";
+								echo "<img src=\"", bloginfo('template_directory'), "/img/default-post-image.jpg\" class=\"img-fluid post-stacked\" alt=\"", get_the_title(), "\" loading=\"lazy\" />";
 							}
 
 							// Display the title
@@ -332,7 +332,7 @@
 		<div class="row">
 			<div class="col-md-6">
 				<?php
-					echo "<img src=\"", bloginfo('template_directory'), "/img/training-records.jpg\" class=\"img-fluid mb-2 mb-md-0\" alt=\"Training Records\" />";
+					echo "<img src=\"", bloginfo('template_directory'), "/img/training-records.jpg\" class=\"img-fluid mb-2 mb-md-0\" alt=\"Training Records\" loading=\"lazy\" />";
 				?>
 			</div>
 			<div class="col-md-6">
