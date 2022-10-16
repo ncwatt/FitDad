@@ -38,7 +38,7 @@
 					// Declare a variable to hold the count of the latest posts 
 					$latest_count = 1;
 
-					while ( $latest -> have_posts() && ( $latest_count < 3 ) ) {
+					while ( $latest -> have_posts() && ( $latest_count < 4 ) ) {
 						$latest -> the_post(); // Get the post
 
 						// Check the post isn't already displayed
