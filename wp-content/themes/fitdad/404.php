@@ -8,7 +8,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<img src="<?php bloginfo('template_directory') ?>/img/404.jpg" class="img-fluid mb-2 mb-md-0" alt="" loading="lazy" />
+				<img src="<?php bloginfo('template_directory') ?>/img/404.jpg" class="img-fluid mb-2 mb-md-0" alt="Arnie in Predator" loading="lazy" />
 			</div>
 			<div class="col-md-6">
 				<h1>Oops! Something Went Wrong</h1>
