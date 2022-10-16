@@ -23,14 +23,15 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<h2>Recent Posts</h2>
+				<h2>While You're Here</h2>
 				<hr />
 			</div>
 		</div>
 		<div class="row">
 			<?php
 				$latest_args = array(
-					'posts_per_page' => 3
+					'posts_per_page' => 3,
+					'orderby' => 'rand'
 				);
 				$latest = new WP_Query( $latest_args );
 
@@ -82,6 +83,9 @@
 							$latest_count++;
 						//}
 					}
+
+					// Reset global post variable. After this point, we are back to the Main Query object.
+					wp_reset_postdata();
 				}
 			?>
 		</div>
