@@ -56,6 +56,8 @@ define( 'AUTH_SALT',        'Y.SR5N~dY=V+05@_ysKFn[v8t-{:b<y4dlgXVhIElWS&99`i#j(
 define( 'SECURE_AUTH_SALT', 'pqz7/e`b#LSK]>3bC4U{*i%DiHn@i,qrw{>6adzfP4WDg,pq()4}oip>.exjvbSR' );
 define( 'LOGGED_IN_SALT',   'Zc>/3H1xRVDJ<4lC;|$L9K?;X+`oDL9h,+F,Mob5$B?2wGl6^bE]nk)r5DPY?9VO' );
 define( 'NONCE_SALT',       'ucQ8L:q:CDRf2)(PmQ>pYRps/4Ew~GdYV;?CH4lfvJz_{{*IL0;u plO1LM3w2gK' );
+define( 'RECAPTCHA_SITEKEY', '6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI' );
+define( 'RECAPTCHA_SECRETKEY', '6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe' );
 
 /**#@-*/
 
