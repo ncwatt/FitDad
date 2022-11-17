@@ -30,7 +30,7 @@
 				<div class="row">
 					<div class="col-12">
 						<?php
-							$postcat = get_the_category( $query->post->ID );
+							$postcat = get_the_category( $post->ID );
 							if ( ! empty( $postcat ) ) {
 								$category = get_top_level_category( $postcat[0]->cat_ID );
 						
