@@ -91,6 +91,18 @@ a.no-underline {
         text-decoration: underline;
     }
 
+/* Comments */
+
+.comments {
+
+}
+
+.comments .avatar {
+    float: left;
+    margin: 0 15px 0 0;
+}
+
+
 /*  Posts */
 .post-list {
 }
