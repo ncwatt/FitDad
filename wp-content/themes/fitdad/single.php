@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-12 col-lg-9 comments">
+					<div class="col-12 comments">
 						<?php
 							// If comments are open or there is at least one comment, load up the comment template.
 							if ( comments_open() || get_comments_number() ) {
