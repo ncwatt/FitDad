@@ -1,6 +1,6 @@
 <?php get_header(); 
 /*
-Template Name: Plain Page
+Template Name: Blank Page
 */
 ?>
 <div class="page-content bg-color1">
