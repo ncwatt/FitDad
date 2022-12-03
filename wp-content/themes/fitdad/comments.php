@@ -1,8 +1,13 @@
+<?php 
+	// Stop the file from being accessed directly
+	if(!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME'])) :
+		die('You can not access this page directly!');
+	endif;
+?>
+
 <?php
-	/*
- 	* If the current post is protected by a password and the visitor has not yet
- 	* entered the password we will return early without loading the comments.
- 	*/
+ 	// If the current post is protected by a password and the visitor has not yet
+ 	// entered the password we will return early without loading the comments.
 	if (post_password_required())
  		return;
 
@@ -74,17 +79,30 @@
 			<p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to post a comment.</p>
 		<?php else : ?>
 			<form action="<?php echo bloginfo('template_directory'); ?><?php #echo get_option('siteurl'); ?>/wp-comments-post.php" method="post" id="commentform">
-				<?php if( is_user_logged_in() ) : ?>
+				<?php if(is_user_logged_in()) : ?>
 					<p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?action=logout" title="Log out of this account">Log out &raquo;</a></p>
 				<?php else : ?>
-					<p><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="22" tabindex="1" />
-					<label for="author"><small>Name <?php if($req) echo "(required)"; ?></small></label></p>
-					<p><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="22" tabindex="2" />
-					<label for="email"><small>Email (will not be published) <?php if($req) echo "(required)"; ?></small></label></p>
-					<p><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="22" tabindex="3" />
-					<label for="url"><small>Website</small></label></p>
+					<div class="form-group mb-3">
+                    	<label for="author" class="form-label">Name <?php if($req) : ?><span class="text-danger">*</span><?php endif; ?></label>
+                    	<input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" aria-describedby="authorHelp" placeholder="Enter your name" class="form-control">
+                    	<small id="authorHelp" class="form-text text-muted">You must provide your name</small>
+                	</div>
+					<div class="form-group mb-3">
+                    	<label for="email" class="form-label">Email address <?php if($req) : ?><span class="text-danger">*</span><?php endif; ?></label>
+                    	<input type="email" name="email" id="email" value="<?php echo $comment_author_email; ?>" aria-describedby="emailAddressHelp" placeholder="Enter your email address" class="form-control">
+                    	<small id="emailAddressHelp" class="form-text text-muted">You must provide your email address (it will not be published)</small>
+                	</div>
+						<div class="form-group mb-3">
+                    	<label for="url" class="form-label">Website</label>
+                    	<input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" aria-describedby="urlAddressHelp" placeholder="Website URL" class="form-control">
+                    	<small id="urlAddressHelp" class="form-text text-muted">Please provide your website URL</small>
+                	</div>
 				<?php endif; ?>
-				<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+				<div class="form-group mb-3">
+                	<label for="comment" class="form-label">Comment <span class="text-danger">*</span></label>
+                	<textarea rows="5" name="comment" id="comment" placeholder="Enter your comment" class="form-control" aria-describedby="commentHelp"></textarea>
+                	<small id="commentHelp" class="form-text text-muted">Enter the comment you want to submit</small>
+            	</div>
 				<p>
 					<div class="g-recaptcha" data-sitekey="<?php echo RECAPTCHA_SITEKEY; ?>" data-callback="callbackCommentSubmit"></div>
 					<script type="text/javascript">
