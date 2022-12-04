@@ -43,6 +43,28 @@ function add_specific_menu_location_atts( $atts, $item, $args ) {
 }
 add_filter( 'nav_menu_link_attributes', 'add_specific_menu_location_atts', 10, 3 );
 
+// 
+function custom_validate_comment_recaptcha() 
+{
+    $receivedRecaptcha = $_POST['g-recaptcha-response'];
+    $verifiedRecaptcha = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . RECAPTCHA_SECRETKEY . '&response=' . $receivedRecaptcha);
+
+    $verResponseData = json_decode($verifiedRecaptcha);
+
+    if(!$verResponseData->success)
+    {
+	    wp_die(
+		    '<p>reCAPTCHA is not valid! : ' . $_POST['recaptchaRes'],
+		    __( 'Comment Submission Failure' ),
+		    array(
+			    'response'  => '',
+			    'back_link' => true,
+		    )
+	    );
+    }
+}
+add_action('pre_comment_on_post', 'custom_validate_comment_recaptcha');
+
 // Add images sizes
 add_image_size('post_image', 1200, 628, false);
 
