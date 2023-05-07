@@ -321,7 +321,7 @@
 		</div>
 	</div>
 </div>
-<div class="bg-color1 py-4">
+<div class="bg-color1 py-4 d-none">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
