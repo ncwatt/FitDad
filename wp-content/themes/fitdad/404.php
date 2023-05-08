@@ -14,7 +14,7 @@
 				<h1>Oops! Something Went Wrong</h1>
 				<h2>"Get to the choppa!"</h2>
 				<p>The page you are looking for cannot be found. Arnie is going to stay back and deal with the problem.</p>
-				<p>In the meantime, on your way back to the choppa, why not you check out one of the posts below.</p>
+				<p>In the meantime, on your way back to the choppa, why not check out one of the posts below.</p>
 			</div>
 		</div>
 	</div>
