@@ -28,7 +28,7 @@
 <h2>Comments</h2>
 <?php 
 	// Loops through $comments_query and displays the comments
-	// When approved the actual comment is displayed and the where applicable the name is the website linke
+	// When approved the actual comment is displayed and the where applicable the name is the website link
 	// When not approved an awaiting moderation message is displayed
 	if ($comments) :
 		foreach ($comments as $comment) :
@@ -71,7 +71,7 @@
 		<p>There are currently no comments. Why not be the first by using the form below.</p>
 <?php endif; ?>
 
-<h2>Leave a comment</h2>
+<h3>Leave a comment</h3>
 <?php 
 	// If comments are open display the new comment form otherwise comments are closed message is displayed
 	if(comments_open()) :
