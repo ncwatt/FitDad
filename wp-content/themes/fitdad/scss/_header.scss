@@ -1,0 +1,37 @@
+.admin-bar-padding {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 782px) {
+    header {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 783px) {
+    .admin-bar .admin-bar-padding {
+        margin-top: 32px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+}
+
+.navbar {
+    transition: background-color linear 0.2s;
+
+    .brand-link {
+        width: 0px;
+        margin: -3px;
+        transition: width .2s;
+    }
+
+    .brand-link-show {
+        width: 190px;
+        margin: 0px;
+    }
+}
