@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<?php wp_head(); ?>
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 	<link href="<?php bloginfo('template_directory');?>/css/fontawesome.all.min.css" rel="stylesheet" />
+	<?php wp_head(); ?>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	<!-- Fav / Touch Icons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="<?php bloginfo('template_directory');?>/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="<?php bloginfo('template_directory');?>/icons/favicon-32x32.png">
@@ -20,22 +20,22 @@
 <body <?php body_class(); ?>>
 
 <header>
-	<nav id="topNavigation" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top navbar-top admin-bar-padding">
+	<nav id="navbar-top" class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm admin-bar-padding">
 		<div class="container">
-			<a id="brandLink" class="brandlink" href="<?php bloginfo('url'); ?>">
-				<img id="topNavLogo" src="<?php bloginfo('template_directory');?>/img/navbar-top-logo.png" class="img-fluid navbar-logo navbar-logo-show" alt="FitDad Logo" />
+			<a id="navbar-top-brand-link" class="brand-link" href="<?php bloginfo('url'); ?>">
+				<img src="<?php bloginfo('template_directory');?>/img/navbar-top-logo.png" class="img-fluid" alt="FitDad Logo" />
 			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-top-nav" aria-controls="navbar-top-nav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="collapse navbar-collapse" id="navbar-top-nav">
 				<?php 
 					wp_nav_menu (
 						array ( 
 							'theme_location'	=> 'top-menu',
 							'container'			=> 'div',
 							'container_class'	=> 'me-auto mb-2 mb-lg-0',
-							'menu_class'		=> 'top-menu navbar-nav',
+							'menu_class'		=> 'navbar-nav',
 							'add_li_class'		=> 'nav-item'
 						)
 					); 

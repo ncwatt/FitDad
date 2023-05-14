@@ -1,6 +1,7 @@
 window.onscroll = function () { topMenuClasses() };
+
 window.onload = function () { 
-    if (document.getElementById("hpLogo") == null) { 
+    if (document.getElementById("hp-logo") == null) { 
         topMenuLight(); 
     }
 
@@ -8,12 +9,12 @@ window.onload = function () {
     wpfWpColumnToBsColumn();
 };
 
-var topNavigation = document.getElementById("topNavigation");
-var brandLink = document.getElementById("brandLink");
+var topNavigation = document.getElementById("navbar-top");
+var brandLink = document.getElementById("navbar-top-brand-link");
 
 function topMenuLight() {
     // Show the brand link
-    brandLink.classList.add("brandlink-show");
+    brandLink.classList.add("brand-link-show");
 
     // Make the navigation bar light
     topNavigation.classList.remove("bg-dark");
@@ -24,7 +25,7 @@ function topMenuLight() {
 
 function topMenuDark() {
     // Hide the brand link
-    brandLink.classList.remove("brandlink-show");
+    brandLink.classList.remove("brand-link-show");
 
     // Make the navigation bar dark
     topNavigation.classList.add("bg-dark");
@@ -34,8 +35,10 @@ function topMenuDark() {
 }
 
 function topMenuClasses() {
-    if (document.getElementById("hpLogo") != null) {
-        if (window.pageYOffset > (hpLogo.offsetTop + hpLogo.offsetHeight) - topNavigation.offsetHeight) {
+    if (document.getElementById("hp-logo") != null) {
+        var logo = document.getElementById("hp-logo");
+        
+        if (window.pageYOffset > (logo.offsetTop + logo.offsetHeight) - topNavigation.offsetHeight) {
             topMenuLight();
         }
         else {

@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div id="hpLogo" class="container-fluid hp-logo">
+<div id="hp-logo" class="container-fluid">
 	<img src="<?php bloginfo('template_directory');?>/img/hp-logo-large.png" alt="Fit Dad Logo" />
 </div>
 <div class="d-md-none hp-blocks bg-color1">
@@ -123,7 +123,7 @@
 		</div>
 	</div>
 </div>
-<div class="bg-color3 py-4">
+<div class="hp-welcome">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -162,7 +162,7 @@
 		</div>
 	</div>
 </div>
-<div class="bg-color1 py-4">
+<div class="hp-featured-post">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -317,37 +317,6 @@
 					</script>
 				</div>
 				<div class="advert-after"></div>
-			</div>
-		</div>
-	</div>
-</div>
-<div class="bg-color1 py-4 d-none">
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<h2>Coming Soon</h2>
-				<hr />
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-6">
-				<?php
-					echo "<img src=\"", bloginfo('template_directory'), "/img/training-records.jpg\" class=\"img-fluid mb-2 mb-md-0\" alt=\"Training Records\" loading=\"lazy\" />";
-				?>
-			</div>
-			<div class="col-md-6">
-				<h3>Training Records</h3>
-				<p>
-					I'm in the process of back dating my training records to the beginning of the 2022. When completed I will be posting an update every
-					week of what training I have completed. Each run, walk and rep is getting tracked and will be available for you to see what training
-					I'm doing in my bid to go from fat lad to fit dad.
-				</p>
-				<p>
-					The plan moving forward is to then outline my diet each week. I'll be posting my daily average kcals and macros. Plus I will be
-					posting some examples of everything I eat in a day. I'm currently use 
-					<a href="https://joincarbon.com/" target="_blank">Carbon Diet Coach</a> to track all of my nutrition which also
-					calculates how much protein, carbs and fats I should be consuming to reach my specific goal.
-				</p>
 			</div>
 		</div>
 	</div>
