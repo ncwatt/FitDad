@@ -142,7 +142,7 @@
 					content which I hope will inspire others out there to embark on theirs. I want to show, that despite working full time, it is possible
 					to make positive changes for yourself, so that you can enjoy time with your family for years to come.
 				</p>
-				<a href="<?php echo get_permalink( get_page_by_path( '/about' ) ); ?>" class="btn btn-info">Tell me more...</a>
+				<a href="<?php echo get_permalink(get_page_by_path('/about')); ?>" class="btn btn-info">Tell me more...</a>
 			</div>
 			<div class="col-md-4 mt-4 mt-md-0">
 				<div class="d-md-none advert-before">Advert</div>
@@ -167,24 +167,21 @@
 		<div class="row">
 			<div class="col-xs-12">
 				<?php
-					// Declare an array to hold the IDs of posts which are currently being
-					// shown on the home page to negate duplicates being displayed
+					// Array to hold IDs of posts being displayed on home page
 					$displayed_posts = array();
-
-					$sticky = get_option( 'sticky_posts' );
+					$sticky = get_option('sticky_posts');
 					$featured_args = array(
 						'posts_per_page' => 1,
 						'post__in' => $sticky,
 						'ignore_sticky_posts' => 1
 					);
-					$featured = new WP_Query( $featured_args );
-					if ( isset( $sticky[0] ) ) {
-						echo "<h2>Featured Post</h2>";
-					} 
-					else {
-						echo "<h2>Latest Post</h2>";
-					}
+					$featured = new WP_Query($featured_args);
+					if (isset($sticky[0])) :
 				?>
+					<h2>Featured Post</h2>
+				<?php else : ?>
+					<h2>Latest Post</h2>
+				<?php endif; ?>
 				<hr />
 			</div>
 		</div> 
