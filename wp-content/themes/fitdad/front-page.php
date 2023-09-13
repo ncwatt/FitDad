@@ -2,7 +2,7 @@
 <div id="hp-logo" class="container-fluid">
 	<img src="<?php bloginfo('template_directory');?>/img/hp-logo-large.png" alt="Fit Dad Logo" />
 </div>
-<div class="d-md-none hp-blocks bg-color1">
+<div class="d-md-none hp-blocks">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 hp-block-xs hp-block-text1">
@@ -231,7 +231,7 @@
 		</div>
 	</div>
 </div>
-<div class="bg-color3 py-4">
+<div class="hp-recent-posts">
 	<div class="container">
 		<div class="row">
 			<div class="col">
