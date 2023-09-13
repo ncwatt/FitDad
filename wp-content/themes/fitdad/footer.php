@@ -2,19 +2,21 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 text-center text-md-start order-1">
-					<h9>Be Social</h9>
+					<h9>Follow</h9>
 					<ul class="follow-icons">
 						<!--<li><a href="#" class="fab fa-facebook-f"></a>&nbsp;</li>-->
 						<li><a href="https://twitter.com/ukfitdad" target="_blank" class="fab fa-twitter"></a>&nbsp;</li>
-						<li><a href="https://www.instagram.com/ukfitdad/" target="_blank" class="fab fa-instagram"></a></li>
+						<li><a href="https://www.instagram.com/ukfitdad/" target="_blank"><i class="fab fa-instagram"></i></a>&nbsp;</li>
+						<li><a href="https://www.strava.com/athletes/23491399" target="_blank"><i class="fab fa-strava"></i></a>&nbsp;</li>
+						<li><a href="https://www.thepowerof10.info/athletes/profile.aspx?ukaurn=3947341" target="_blank"><img src="<?php bloginfo('template_directory');?>/img/power-of-10.png" class="power-of-10" /></a>&nbsp;</li>
 					</ul>
 				</div>
 				<div class="col-md-6 mt-3 mt-md-0 text-center order-3 order-md-2">
-					<p class="copyright">&copy; Copyright 2022. All Rights Reserved by <a href="/">fitdad.co.uk</a></p>
+					<p class="copyright">&copy; Copyright 2023. All Rights Reserved by <a href="/">fitdad.co.uk</a></p>
 					<p class="admin-login">Powered by <a href="https://wordpress.org/" target="_blank">WordPress</a> | Theme by <a href="https://gtctek.co.uk" target="_blank">Gtctek</a> | Admin <a href="/wp-admin">Login</a></p>
 				</div>
 				<div class="col-md-3 mt-3 mt-md-0 text-center text-md-end order-2 order-md-3">
-					<h9>Boring Links</h9>
+					<h9>Legal</h9>
 					<p>
 						<a href="#discModal" data-bs-toggle="modal" data-bs-target="#discModal">Disclaimer</a> | 
 						<a href="#discModal" data-bs-toggle="modal" data-bs-target="#discModal">Terms of Use</a>
