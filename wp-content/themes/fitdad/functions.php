@@ -1,8 +1,9 @@
 <?php
 
+
 function load_loadstylesheets()
 {
-	wp_register_style('stylesheet', get_template_directory_uri() . '/css/styles.css', '', '1.0.9', 'all');
+	wp_register_style('stylesheet', get_template_directory_uri() . '/css/styles.css', '', '1.0.10', 'all');
 	wp_enqueue_style('stylesheet');
 }
 add_action('wp_enqueue_scripts', 'load_loadstylesheets');
