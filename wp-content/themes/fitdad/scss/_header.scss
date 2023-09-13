@@ -1,13 +1,8 @@
-.admin-bar-padding {
-    margin-top: 0px;
-}
-
-@media screen and (max-width: 782px) {
-    header {
-        position: -webkit-sticky; /* Safari */
-        position: sticky;
-        top: 0;
-    }
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1030;
 }
 
 @media screen and (min-width: 783px) {
@@ -17,7 +12,16 @@
         top: 0;
         right: 0;
         left: 0;
-        z-index: 1030;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .admin-bar .admin-bar-padding {
+        margin-top: 46px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
     }
 }
 

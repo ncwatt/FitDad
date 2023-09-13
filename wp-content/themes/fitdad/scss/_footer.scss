@@ -36,6 +36,14 @@ footer {
 
         li {
             display: inline-block;
+            vertical-align: top;
         }
+
+        li .power-of-10 {
+            height: 27px; 
+            padding: 0 0 5px 0;
+        }
+
+        
     }
 }

@@ -48,16 +48,12 @@ p {
   line-height: 1.4 !important;
 }
 
-.admin-bar-padding {
-  margin-top: 0px;
+header { /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1030;
 }
 
-@media screen and (max-width: 782px) {
-  header { /* Safari */
-    position: sticky;
-    top: 0;
-  }
-}
 @media screen and (min-width: 783px) {
   .admin-bar .admin-bar-padding {
     margin-top: 32px;
@@ -65,7 +61,15 @@ p {
     top: 0;
     right: 0;
     left: 0;
-    z-index: 1030;
+  }
+}
+@media screen and (max-width: 782px) {
+  .admin-bar .admin-bar-padding {
+    margin-top: 46px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
   }
 }
 .navbar {
@@ -114,6 +118,11 @@ footer .follow-icons {
 }
 footer .follow-icons li {
   display: inline-block;
+  vertical-align: top;
+}
+footer .follow-icons li .power-of-10 {
+  height: 27px;
+  padding: 0 0 5px 0;
 }
 
 .advert-before {
@@ -234,7 +243,13 @@ footer .follow-icons li {
   padding: 2rem 0 3rem 0;
 }
 
+.hp-recent-posts {
+  background-color: #f2f2f2;
+  padding: 2rem 0 3rem 0;
+}
+
 .page-content {
+  background-color: #ffffff;
   padding: 7rem 0 3rem 0;
 }
 
