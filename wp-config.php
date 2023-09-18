@@ -40,6 +40,9 @@ define( 'DB_COLLATE', '' );
 /** Force update method to be direct  */
 define('FS_METHOD','direct');
 
+/** Diable automatic updates */
+define( 'WP_AUTO_UPDATE_CORE', false );
+
 /**#@+
  * Authentication unique keys and salts.
  *
